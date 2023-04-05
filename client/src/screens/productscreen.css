@@ -1,0 +1,237 @@
+/* .flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.detbox {
+    text-align: "center";
+    border: '5px';
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+input {
+    display: none;
+}
+.carousel{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.carousel-images img{
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-controls{
+    height: 100%;
+    justify-content: flex-end;
+}
+.carousel-controls .dots{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+label{
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+.dots{
+    left: 0;
+    bottom: 0;
+    height: 400px;
+    background: linear-gradient(transition,#000 90%);
+    gap: 12px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+input:nth-child(1):checked ~
+.dot label:nth-child(1),
+
+input:nth-child(2):checked ~
+.dot label:nth-child(2),
+
+input:nth-child(3):checked ~
+.dot label:nth-child(3)
+{
+    background:rgba(255,255,255,0.95s);
+}
+
+input:nth-child(1):checked ~ .carousel-images{
+    translate: 0;
+}
+
+input:nth-child(2):checked ~ .carousel-images{
+    translate: -100vw;
+}
+
+input:nth-child(3):checked ~ .carousel-images{
+    translate: -200vw;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23E3C9;
+  } */
+  
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+
+
+  
